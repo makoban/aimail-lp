@@ -190,33 +190,18 @@ body {
 
 .hero-images {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: flex-start;
     justify-content: center;
-}
-
-.hero-main-image {
-    flex: 1;
-    max-width: 280px;
-}
-
-.hero-main-image img {
-    width: 100%;
-    height: auto;
-    animation: float 3s ease-in-out infinite;
+    align-items: center;
 }
 
 .hero-phone-mockup {
     position: relative;
-    flex: 1;
-    max-width: 280px;
+    max-width: 350px;
     background: var(--white);
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    animation: float 4s ease-in-out infinite;
-    animation-delay: 0.5s;
+    animation: float 3s ease-in-out infinite;
 }
 
 .hero-phone-mockup img {
@@ -629,22 +614,8 @@ body {
         flex-direction: column;
     }
 
-    .hero-images {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .hero-main-image {
-        max-width: 100%;
-    }
-
-    .hero-main-image img {
-        max-width: 300px;
-    }
-
     .hero-phone-mockup {
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .problem-content {
