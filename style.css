@@ -192,6 +192,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.secretary-character {
+    max-width: 250px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.secretary-character img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .hero-phone-mockup {
@@ -612,6 +634,15 @@ body {
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .hero-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .secretary-character {
+        max-width: 200px;
     }
 
     .hero-phone-mockup {
