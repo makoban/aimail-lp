@@ -188,56 +188,17 @@ body {
     transform: translateY(-3px);
 }
 
-.hero-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-}
-
-.secretary-character {
-    max-width: 250px;
-    animation: bounce 2s ease-in-out infinite;
-}
-
-.secretary-character img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-.hero-phone-mockup {
-    position: relative;
-    max-width: 350px;
-    background: var(--white);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+.hero-main-visual {
+    max-width: 600px;
+    margin: 0 auto;
     animation: float 3s ease-in-out infinite;
 }
 
-.hero-phone-mockup img {
+.hero-main-visual img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-}
-
-.phone-caption {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--accent-orange);
-    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes float {
@@ -636,17 +597,9 @@ body {
         flex-direction: column;
     }
 
-    .hero-images {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .secretary-character {
-        max-width: 200px;
-    }
-
-    .hero-phone-mockup {
-        max-width: 280px;
+    .hero-main-visual {
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     .problem-content {
